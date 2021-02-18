@@ -13,7 +13,7 @@ body {
   background-color: #292929;
   color: white;
   padding: 1rem;
-  border-radius: 4px; }
+  border-radius: 0px 0px 4px 4px; }
   .header p {
     color: orange; }
 
@@ -26,14 +26,16 @@ body {
     .form label input, .form label textarea {
       display: block;
       padding: .3rem;
-      outline-color: orange;
-      width: 100%; }
+      outline-color: #292929;
+      width: 100%;
+      border: 1px solid #adadad;
+      border-radius: 4px; }
   .form button {
     background-color: orange;
     color: white;
     padding: .5rem 1.3rem;
     border-radius: 4px;
-    border: none; }
+    border: 2px solid #292929; }
 
 .post {
   margin: .5rem 0;

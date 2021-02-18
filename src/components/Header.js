@@ -6,7 +6,7 @@ export default class Header extends Component {
             <div className="header">
 
                 <h1>Fondling With React-Redux</h1>
-                <p>Making a simple get and post using react-redux for state management</p>
+                <p>Making a simple post and get using react-redux for state management</p>
                 
             </div>
         )
