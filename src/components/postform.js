@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 import {sendPost} from '../actions/postAction';
 
-export default class PostForm extends Component {
+class PostForm extends Component {
 
     constructor(props){
 
@@ -65,3 +66,5 @@ export default class PostForm extends Component {
         )
     }
 }
+
+export default connect(null, {sendPost})(PostForm)

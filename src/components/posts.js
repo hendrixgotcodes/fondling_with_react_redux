@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import fetchPosts from '../actions/postAction';
+import {fetchPosts} from '../actions/postAction';
 
 class Posts extends Component {
 
@@ -10,9 +10,13 @@ class Posts extends Component {
 
     }
 
-    componentWillReceiveProps(){
+    componentWillReceiveProps(nextProps){
 
-        
+        if(nextProps.newPost){
+
+            this.props.posts.unshift(nextProps.newPost)
+
+        }
 
     }
 
@@ -42,7 +46,8 @@ function mapStateToProps(state){
 
        {
 
-            posts: state.posts.items
+            posts: state.posts.items,
+            newPost: state.posts.item
 
        }
 
