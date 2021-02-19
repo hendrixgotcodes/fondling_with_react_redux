@@ -30,13 +30,17 @@ class Posts extends Component {
     }
 }
 
-const mapStateToProps = function(state){
+function mapStateToProps(state){
 
-    return({
+    return(
 
-        posts: state.posts.items
+       {
 
-    })
+            posts: state.posts.items
+
+       }
+
+    )
 
 }
 
