@@ -10,6 +10,12 @@ class Posts extends Component {
 
     }
 
+    componentWillReceiveProps(){
+
+        
+
+    }
+
     render() {
 
         const postItems = this.props.posts.map(post=> (
