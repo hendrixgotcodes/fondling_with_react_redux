@@ -30,4 +30,18 @@ class Posts extends Component {
     }
 }
 
-export default Posts
+function mapStateToProps(state){
+
+    return(
+
+       {
+
+            posts: state.posts.items
+
+       }
+
+    )
+
+}
+
+export default connect(mapStateToProps, {fetchPosts})(Posts)
